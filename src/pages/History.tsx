@@ -1,3 +1,5 @@
+import { Header } from "../components/Header";
+
 function History(){
   return(
     <div id="history">
