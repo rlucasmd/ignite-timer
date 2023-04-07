@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const Globalstyle = createGlobalStyle`
   * {
@@ -6,7 +6,7 @@ const Globalstyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-
+  
   :focus {
     outline: 0;
     box-shadow: 0 0 0 2px ${props => props.theme["gray-500"]}
