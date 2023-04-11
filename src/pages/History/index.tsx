@@ -1,4 +1,3 @@
-import { Header } from "../../components/Header";
 import { HistoryContainer, HistoryList, Status } from "./styles";
 
 function History(){

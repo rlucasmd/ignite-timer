@@ -8,8 +8,7 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended",
-    "prettier"
+    "plugin:react-hooks/recommended"
   ],
   "overrides": [
   ],
@@ -42,6 +41,9 @@
     ],
     "@typescript-eslint/no-empty-interface": "off",
     "max-len": [
+      "error"
+    ],
+    "arrow-parens": [
       "error"
     ]
   }
