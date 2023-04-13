@@ -23,7 +23,7 @@ interface CyclesContextType {
   interruptCurrentCycle: () => void;
 }
 
-export const CyclesContext = createContext({} as CyclesContextType);
+const CyclesContext = createContext({} as CyclesContextType);
 
 
 interface CyclesContextProviderType {
@@ -94,4 +94,4 @@ function CyclesContextProvider({ children }: CyclesContextProviderType) {
   );
 }
 
-export { CyclesContextProvider };
+export { CyclesContextProvider, CyclesContext };
