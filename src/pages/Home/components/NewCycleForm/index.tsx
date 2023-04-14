@@ -3,16 +3,19 @@ import { useContext } from "react";
 import { CyclesContext } from "../../../../contexts/CyclesContext";
 import { useFormContext } from "react-hook-form";
 
-function NewCycleForm(){
+function NewCycleForm() {
   const { activeCycle } = useContext(CyclesContext);
-  const { register } = useFormContext();
+  const { register /*watch*/ } = useFormContext();
+
+  //   const minutes = watch("minutesAmount");
+  //   console.log(minutes);
 
   return (
     <FormContainer>
       <label htmlFor="task">Vou trabalhar em</label>
-      <TaskInput 
-        id="task" 
-        type="text" 
+      <TaskInput
+        id="task"
+        type="text"
         placeholder="Dê um nome para o seu projeto"
         list="task-suggestions"
         disabled={!!activeCycle}
@@ -28,8 +31,8 @@ function NewCycleForm(){
 
       <label htmlFor="minutesAmount">durante</label>
       <MinutesAmountInput
-        placeholder="00" 
-        type="number" 
+        placeholder="00"
+        type="number"
         id="minutesAmount"
         step={5}
         min={5}
