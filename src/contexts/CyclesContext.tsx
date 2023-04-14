@@ -14,6 +14,7 @@ interface Cycle {
 }
 
 interface CyclesContextType {
+  cycles: Cycle[];
   activeCycle: Cycle | undefined;
   activeCycleId: string | null;
   markCurrentCycleAsFinished: () => void;
@@ -81,6 +82,7 @@ function CyclesContextProvider({ children }: CyclesContextProviderType) {
   }
   return (
     <CyclesContext.Provider value={{
+      cycles,
       activeCycle,
       activeCycleId,
       markCurrentCycleAsFinished,
